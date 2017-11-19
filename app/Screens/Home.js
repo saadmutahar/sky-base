@@ -50,10 +50,11 @@ class Home extends Component {
                         <TextInput
                             style={styles.textInput}
                             onChangeText= {this.handleTextInput}
-                            placeholder= "Enter your name"
+                            placeholder= "Enter your name saad "
                             />
 
                             <Text >  Your name is  </Text>
+                            <Text >  My name is saad  </Text>
                             <Text> {display} </Text>
 
         </View>
