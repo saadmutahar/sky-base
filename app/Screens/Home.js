@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { Container, Header, Content, Badge, Text, Icon } from 'native-base';
+
 import StarRating from 'react-native-star-rating';
 
 
@@ -13,7 +15,6 @@ import {Provider} from 'react-redux';
 import {
     Platform,
     StyleSheet,
-    Text,
     TextInput,
     Image,
     View
@@ -44,20 +45,50 @@ class Home extends Component {
         let display = this.props.conversionDisplay;
    
         return (
-        <View style= {styles.container}>  
+        // <View style= {styles.container}>  
           
+        //                 <TextInput
+        //                     style={styles.textInput}
+        //                     onChangeText= {this.handleTextInput}
+        //                     placeholder= "Enter your name saad "
+        //                     />
+        //                     <Text >  Your name is  </Text>
+        //                     <Text >  My name is saad  </Text>
+        //                     <Text> {display} </Text>
 
-                        <TextInput
-                            style={styles.textInput}
-                            onChangeText= {this.handleTextInput}
-                            placeholder= "Enter your name saad "
-                            />
+        // </View>
 
-                            <Text >  Your name is  </Text>
-                            <Text >  My name is saad  </Text>
-                            <Text> {display} </Text>
+<Container>
+<Header />
+<Content>
+  <Badge>
+    <Text>2</Text>
+  </Badge>
+  <Badge primary>
+    <Text>2</Text>
+  </Badge>
+  <Badge success>
+    <Text>2</Text>
+  </Badge>
+  <Badge info>
+    <Text>2</Text>
+  </Badge>
+  <Badge warning>
+    <Text>2</Text>
+  </Badge>
+  <Badge danger>
+    <Text>2</Text>
+  </Badge>
+  <Badge primary>
+    <Icon name="star" style={{ fontSize: 15, color: "#fff", lineHeight: 20 }}/>
+  </Badge>
+  <Badge style={{ backgroundColor: 'black' }}>
+    <Text style={{ color: 'white' }}>1866</Text>
+  </Badge>
+</Content>
+</Container>
 
-        </View>
+
           
         );
       }
